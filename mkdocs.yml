@@ -1,0 +1,175 @@
+site_name: UZG Documentation
+site_author: ZigStar
+site_url: https://uzg.zig-star.com
+site_description: ZigStar UZG - Universal ZigBee Gateway
+repo_url: https://github.com/mercenaruss/uzg-01-firmware
+repo_name: ZigStar UZG
+edit_uri: edit/main/docs/
+copyright: >
+  Copyright &copy; 2019-2023 ZigStar –
+  <a href="#__consent">Change cookie settings</a>
+theme:
+  name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
+  language: en
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  features:
+    ##Setting up navigation
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+#    - navigation.path
+    - navigation.prune
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    ##Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    ##Setting up the header
+    - header.autohide
+    - announce.dismiss
+    ##Navigation footer
+    - navigation.footer
+    ##Content tabs
+    - content.tabs.link
+    - content.code.select
+    - content.code.copy
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+
+# Extensions
+markdown_extensions:
+  #General
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  #Admonitions
+  - admonition
+  - pymdownx.details
+  #Annotations/Buttons
+  - attr_list
+  - md_in_html
+  - def_list
+  #Footnotes
+  - footnotes
+  #Data tables
+  - tables
+  - abbr
+  #Code Blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  #Content Tabs
+  - pymdownx.tabbed:
+      alternate_style: true 
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  #Formating
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  #Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  #Lists
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  #Table of Contents
+  - toc:
+      permalink: true
+  #BetterEm
+  - pymdownx.betterem:
+      smart_enable: all
+  #SmartSymbols
+  - pymdownx.smartsymbols
+  #Neoteroi
+  - neoteroi.cards
+  - neoteroi.timeline
+
+# Plugins
+plugins:
+  - tags
+  - offline:
+      enabled: false
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+#  - git-revision-date-localized:
+#      enable_creation_date: true
+#      fallback_to_build_date: true
+#      type: timeago
+#  - git-committers:
+#      repository: mercenaruss/zigstar_uzg
+#      branch: main
+#      docs_path: documentation/docs
+#  - git-authors
+  - external-markdown
+  - minify:
+      minify_html: true
+  - glightbox:
+       touchNavigation: true
+       loop: true
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       auto_caption: true
+       caption_position: bottom
+       skip_classes:
+        - skip-lightbox
+  - section-index
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mercenaruss
+    - icon: fontawesome/solid/paper-plane
+      link: https://t.me/zig_starting
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zig_star4u
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/zPMT3GvvdC
+
+extra_javascript:
+    - https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js ##SwiperJS
+    - https://cdn.jsdelivr.net/npm/tablesort@5.3.0/src/tablesort.min.js
+    - assets/javascripts/tables.js
+    - assets/javascripts/swiper.js
+    
+extra_css:
+    - https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css ## Swiper
+    - assets/stylesheets/zigstar.css
+    - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-columns.css
+
+nav:
+  - Home: index.md
+  - Manual:
+    - Getting Started: getting-started.md
+    - Installation: installation.md
+    - Configuration: configuration.md
+    - Flashing & Updating: flashing-and-updating.md
+    - Multiple Gateways: multiple-gateways-setup.md
+    - ESPHOME BTProxy/Zigbee: bt-proxy.md
+    - FAQ & Lifehacks: faq-and-lifehacks.md
+ 
