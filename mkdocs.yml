@@ -4,7 +4,7 @@ site_url: https://uzg.zig-star.com
 site_description: ZigStar UZG - Universal ZigBee Gateway
 repo_url: https://github.com/mercenaruss/uzg-firmware
 repo_name: ZigStar UZG
-edit_uri: https://github.com/mercenaruss/uzg-manual/blob/main/docs/
+edit_uri: https://github.com/mercenaruss/uzg-manual/edit/main/docs/
 copyright: >
   Copyright &copy; 2019-2023 ZigStar –
   <a href="#__consent">Change cookie settings</a>
