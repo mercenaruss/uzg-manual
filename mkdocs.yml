@@ -164,6 +164,7 @@ extra_css:
 
 nav:
   - Home: index.md
+  - Description: product.md
   - Manual:
     - Getting Started: getting-started.md
     - Installation: installation.md
@@ -172,4 +173,8 @@ nav:
     - Multiple Gateways: multiple-gateways-setup.md
     - ESPHOME BTProxy/Zigbee: bt-proxy.md
     - FAQ & Lifehacks: faq-and-lifehacks.md
+  - Web Installer: webinstall.md
+  - About: 
+    - about.md
+    - privacy.md
  
