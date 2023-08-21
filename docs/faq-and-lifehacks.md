@@ -63,7 +63,7 @@ If ZHA starts - means that the problem in communication between Zigbee2MQTT and 
 
 ## Add some functionality  
 ### UZG-01 & ESPHome firmware  
-You can run ESPHome firmware on your UZG-01 device. Follow this [official repository](https://github.com/mercenaruss/uzg-01-esphome) for the latest ESPHome YAML file.  
+You can run ESPHome firmware on your UZG-01 device. Follow this [to BTProxy](bt-proxy.md) for last yaml and firmware.
 
 - ESPHome Bluetooth Proxy, follow [this manual](bt-proxy.md).
 - ESPHome [Bluetooth Low Energy Tracker Hub](https://esphome.io/components/esp32_ble_tracker.html).
